@@ -219,7 +219,7 @@ public class MainClass {
 				    } else if(pickedFile == null) {
 				    	textArea4.setText("You need to pick a file first.");
 				    } else if(!isTextAreaTextValid(textArea1Text)) {
-				    	textArea4.setText("Command does not fit the format. Check the instructions.");
+				    	textArea4.append(" -> Check the instructions.");
 				    } else {
 				    	textArea4.setText("Something is wrong.");
 				    }
@@ -362,15 +362,19 @@ public class MainClass {
 		String texts[] = text.split(" ", 0);
 		
 		if(!(texts[0].equals("F") || texts[0].equals("R") || texts[0].equals("D"))) {
-			textArea4.setText("Given text does not fit the format. Check the instructions.");
+			textArea4.setText("Given text does not fit the format.");
 			return false;
 		} 
 		else if(texts[0].equals("R") && (texts.length != 3)) {
-			textArea4.setText("Given text does not fit the format. Check the instructions.");
+			textArea4.setText("Given text does not fit the format.");
+			return false;
+		}
+		else if(texts[0].equals("R") && !(texts[2].matches("[a-zA-Z]+"))) {
+			textArea4.setText("Replacement word must not contain any non-word characters.");
 			return false;
 		}
 		else if((texts[0].equals("F") || texts[0].equals("D")) && (texts.length != 2)) {
-			textArea4.setText("Given text does not fit the format. Check the instructions.");
+			textArea4.setText("Given text does not fit the format.");
 			return false;
 		}
 		
@@ -469,7 +473,7 @@ public class MainClass {
 	}
 	
 	/* 
-	 * This function basically prints out the file, but it is not used anywhere in the project.
+	 * 
 	 */
 	public static void readAndDisplayFile(File file) throws FileNotFoundException {
 		
@@ -484,7 +488,8 @@ public class MainClass {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 	}
-}
 
+}
 // END of CODE
