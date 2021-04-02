@@ -4,7 +4,7 @@ This projects main purpose is to make a "Find and Replace" operation on '.txt' f
 Project is created using Eclipse IDE. So I currently don't know how to compile it but I have added the runnable jar file so that you can basically open and use it.
 
 Follow the below steps:
-  1. Choose a file by clicking "Search Button" or hust drag and drop a file on the "Search Button".
+  1. Choose a file by clicking "Search Button" or just drag and drop a file on the "Search Button".
   2. Type a command in the text area which fits the instructions and press 'Enter'.
   3. Following result or output will be displayed on the below text area.
 
