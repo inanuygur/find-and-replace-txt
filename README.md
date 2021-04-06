@@ -30,11 +30,11 @@ You can see some steps and situations of the program in the following images.
 <img src="https://user-images.githubusercontent.com/51864516/112824023-af8fe480-9092-11eb-8bb7-c5ee2397b1d6.PNG" />
 
 <b>F '-er-e-'</b> <br />
-<b>Here '-' means 1 numbers of any letter, so program found "merkez" word.</b> <br />
+<b>Here '-' means 1 number of any letter, so the program found "merkez" word.</b> <br />
 <img src="https://user-images.githubusercontent.com/51864516/112824489-4197ed00-9093-11eb-944e-d918aef73578.PNG" />
 
 <b>F 'uçak*'</b> <br />
-<b>Here '*' means any number of any letters, so program found the "uçaklar" word.</b> <br />
+<b>Here '*' means any number of any letters, so the program found the "uçaklar" word.</b> <br />
 <img src="https://user-images.githubusercontent.com/51864516/112824501-43fa4700-9093-11eb-85d3-59ac97f9a936.png" />
 
 <b>R 'soda' 'kola' </b> <br />
